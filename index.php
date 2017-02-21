@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>PHP Functions</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,6 +24,24 @@
         <!-- Add your site or application content here -->
         <?php 
         /* Write your PHP here */
+
+        /* Functions in PHP also look similar to functions in JS. To create a function in php, you need to use the 'function' keyword. PHP functions can also take paramenters and the are also able to return info. Global and local vars still work the same way in php as they do in JS. */
+        function greetUser() {
+            print_r('<br>Hello!<br>');
+        }
+
+        /* In PHP you also need to call the function before it can run.*/
+        greetUser();
+
+        /*Example of a php function that takes in parameters and returns a value.*/
+        function totalCost($a, $b, $c) {
+            $sum = $a + $b + $c;
+            return $sum; // Returns send a value outside of a function so that it can be accessed and used.
+        }
+
+        echo ('<br>Your total for today is, $' . totalCost(25, 14, 6) . '.00');
+
+
         
         ?> 
 
